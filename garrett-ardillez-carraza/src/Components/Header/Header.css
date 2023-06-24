@@ -1,13 +1,11 @@
+
+
 .header .relative{
     position: relative;
-    width: 100%;
 }
-
 .header.absolute{
     position:absolute;
-    z-index: 1;
-    width: 100%;
-   
+    z-index: 3;
 }
 .headerCineFlixor{
     font-family: 'Waltograph', Arial, sans-serif;
@@ -18,8 +16,8 @@
     background-image: linear-gradient(to right, #e50914, #ffdb00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: 3;
 }
-
 .buttonCineFlixor {
     font-family: 'Waltograph', Arial, sans-serif;
     font-size: 20px;
@@ -30,21 +28,19 @@
     background-image: linear-gradient(to right, #e50914, #ffdb00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: 3;
+    
   }
-  
   .buttonCineFlixor:hover {
     background-color: #ffdb00;
   }
-  
   .buttonCineFlixor:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #e50914;
+    
   }
-
   .buttons{
-    position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 20px;
-  margin-top: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
   }
