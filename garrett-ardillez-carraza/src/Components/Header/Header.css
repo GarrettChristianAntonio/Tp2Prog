@@ -1,0 +1,10 @@
+.header .relative{
+    text-align: center;
+    background-color: green;
+}
+
+.header.absolute{
+    position:absolute;
+    background-color: yellow;
+    z-index: 9999;
+}

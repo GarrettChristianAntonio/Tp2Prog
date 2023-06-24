@@ -1,13 +1,12 @@
 import { Footer } from "../../Components/Footer/Footer"
 import { Header } from "../../Components/Header/Header"
-import { Presentation } from "../../Components/Presentation/Presentation"
-
+import { CarouselHome } from "../../Components/CarouselHome/CarouselHome"
 
 
 export const HomePage = () =>{
-    return(<div>
+    return(<div className="HomePage">
         <Header/>
-        <Presentation/>
-        <Footer/>
+        <CarouselHome/>
+       <Footer/>
     </div>)
 }
