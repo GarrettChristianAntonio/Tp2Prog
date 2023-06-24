@@ -7,6 +7,10 @@ export const Header =() => {
     const isAbsolute = location.pathname === "/"
 
     return (<div className={`header ${isAbsolute ? 'absolute' : 'relative'}`}>
-        <h1>CineFlixor</h1>
+        <h1 className="headerCineFlixor">CineFlixor</h1>
+        <div className="buttons">
+            <button class="buttonCineFlixor">Login</button><button class="buttonCineFlixor">Register</button>
+        </div>
+        
     </div>)
 }

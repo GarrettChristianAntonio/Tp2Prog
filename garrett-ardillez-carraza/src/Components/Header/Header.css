@@ -1,10 +1,50 @@
 .header .relative{
-    text-align: center;
-    background-color: green;
+    position: relative;
+    width: 100%;
 }
 
 .header.absolute{
     position:absolute;
-    background-color: yellow;
-    z-index: 9999;
+    z-index: 1;
+    width: 100%;
+   
 }
+.headerCineFlixor{
+    font-family: 'Waltograph', Arial, sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    color: #e50914;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, #e50914, #ffdb00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttonCineFlixor {
+    font-family: 'Waltograph', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e50914;
+    border: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, #e50914, #ffdb00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .buttonCineFlixor:hover {
+    background-color: #ffdb00;
+  }
+  
+  .buttonCineFlixor:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #e50914;
+  }
+
+  .buttons{
+    position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  }
