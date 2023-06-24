@@ -1,16 +1,28 @@
+//stylo
 import './App.css';
-import { Header } from "./Components/Header/Header.js"
-import { Footer } from './Components/Footer/Footer';
-import { Container } from './Components/Container/Container';
+//react-router
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//pages
+import { HomePage } from './Pages/Home/HomePage';
+import { RegisterPage } from './Pages/Register/RegisterPage';
+
+
+
 
 
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    <Container/>
-    <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/Register" element={<RegisterPage />}></Route>
+        
+        
+      </Routes>
+    </BrowserRouter>
+   
   );
 }
 
