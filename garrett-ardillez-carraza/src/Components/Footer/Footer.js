@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-      <div className="Footer">
+      
         <footer className="bg-dark text-center text-white">
           <div className="container p-4 pb-0">
             <section className="mb-4">
@@ -28,6 +28,6 @@ export const Footer = () => {
             © 2020 MDBootstrap.com
           </div>
         </footer>
-      </div>
+      
     );
   };

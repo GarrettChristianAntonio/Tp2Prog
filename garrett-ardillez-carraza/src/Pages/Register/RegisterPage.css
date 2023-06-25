@@ -3,7 +3,11 @@
     display: grid;
     grid-template-areas: 
         "Header"
+        "FormRegister"
         "Footer";
+    background-image: url(../../Images/Marvel.jpg);
+    background-size: cover;
+  background-position: center;
 }
 
 .Header {
@@ -17,3 +21,4 @@
 .FormRegister {
     grid-area: FormRegister;
 }
+
