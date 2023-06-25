@@ -2,8 +2,9 @@ import { useState } from "react";
 import "./FormRegister.css"
 
 
-const login=(email,password,names,age)=>validate(email)
-const validate=(email)=>email === "hola" ?alert("correcto"): null
+
+
+
 
 export const FormRegister = () =>{
     const [email,setMail] = useState("")
@@ -11,17 +12,14 @@ export const FormRegister = () =>{
     const [names,setNames] = useState("")
     const [age,setAge] = useState(0)
 
-    const error = validate(email,)
-
-
-    
-
-
+    const validar = () =>{
+       email === "hola@hola.com" ?alert("registro verde, se necesita aprender axio y realizar comparación si ya existe el mismo correo"): alert("aun no funciona")
+    }
 
     return(
         <form className="Form" onSubmit={ev => {
             ev.preventDefault();
-            login(email, password, names, age);
+            
         }}>
             <h2>Register</h2>
             <div className="caja">
@@ -41,10 +39,11 @@ export const FormRegister = () =>{
                 <input className="input1" type="number" name="age" value={age} onChange={ev => setAge(ev.target.value)} />
             </div>
             <div className="caja2">
-                <button className="boton1" type="submit">Registrarse</button>
+                <button className="boton1" type="submit" onClick={validar}>Registrarse </button>
             </div>
         </form>)
 }
+
 
     
     

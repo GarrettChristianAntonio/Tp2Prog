@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom"
 import "./Login.css"
+
 
 export const Login = () =>{
 
@@ -18,6 +20,6 @@ export const Login = () =>{
         <div className="mb-3">
           <a href="#" className="forgot-password-link">¿Olvidaste tu contraseña?</a>
         </div>
-        <button type="submit" className="login-button"  >Ingresar</button>
+        <Link to="/Movies"><button type="submit" className="login-button"  >Ingresar</button></Link>
       </form>
     </div>)}
