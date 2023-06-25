@@ -1,11 +1,11 @@
 import "./Login.css"
 
-
-
 export const Login = () =>{
+
   
-   {
-      return(<div className="LoginForm">
+
+      return(
+      <div className="LoginForm"  >
         <form>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Correo electrónico</label>
@@ -18,11 +18,6 @@ export const Login = () =>{
         <div className="mb-3">
           <a href="#" className="forgot-password-link">¿Olvidaste tu contraseña?</a>
         </div>
-        <button type="submit" className="login-button">Ingresar</button>
+        <button type="submit" className="login-button"  >Ingresar</button>
       </form>
-    </div>)
-    }
-}
-
-
-  
+    </div>)}

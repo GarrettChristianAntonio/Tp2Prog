@@ -7,7 +7,7 @@ import "./RegisterPage.css"
 export const RegisterPage = () =>{
     return(<div className="RegisterPage"> 
         <Header/>
-        <Login/>
+       
         
         <Footer/>
         
