@@ -13,7 +13,10 @@ export const FormRegister = () =>{
     const [age,setAge] = useState(0)
 
     const validar = () =>{
-       email === "hola@hola.com" ?alert("registro verde, se necesita aprender axio y realizar comparación si ya existe el mismo correo"): alert("aun no funciona")
+        localStorage.setItem('email', email);
+  localStorage.setItem('password', password);
+ 
+       
     }
 
     return(
@@ -28,7 +31,7 @@ export const FormRegister = () =>{
             </div>
             <div className="caja">
                 <label className="label1">password</label>
-                <input className="input1" type="password" name="password" value={password} onChange={ev => setPassword(ev.target.value)} />
+                <input className="input1" type="text" name="password" value={password} onChange={ev => setPassword(ev.target.value)} />
             </div>
             <div className="caja">
                 <label className="label1">names</label>
